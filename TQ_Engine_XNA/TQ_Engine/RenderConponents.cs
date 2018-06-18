@@ -130,11 +130,10 @@ namespace Rendering
 			globalPosition = at * this;
 		}
 
-		public Camera (float dist, Vector _position, Vector _fwd, Vector _up) {
+		public Camera (float dist, Vector _position, Vector euler) {
 			drawDistance = dist;
 			globalPosition = _position;
-			forward = _fwd;
-			up = _up;
+            globalEulerAngles = euler;
 			scale = Vector.one;
 		}
 	}

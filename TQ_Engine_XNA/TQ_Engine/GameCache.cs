@@ -46,8 +46,7 @@ namespace TQ.TQ_Engine
         public void Update()
         {
 
-            Matrix m = target.rotationMatrix;
-
+            
             right.matrix.globalPosition = target.right;
             up.matrix.globalPosition = target.up;
             forward.matrix.globalPosition = target.forward;
@@ -111,8 +110,9 @@ namespace TQ.TQ_Engine
         private static void PostInit()
         {
 
-            Renderer r = new Renderer(new Matrix4x4(Vector.up * 2, new Vector(0, 0), Vector.one * 0.01f), modelsAsset[1]);
-
+            Renderer r = new Renderer(new Matrix4x4(Vector.up * 2, new Vector(0, 0, 0), Vector.one * 0.01f), modelsAsset[1]);
+            Renderer c = new Renderer(new Matrix4x4(Vector.up * 2 + Vector.forward * 2, new Vector(0, 0, 0), Vector.one * 1f), modelsAsset[0]);
+            
             IncBehaviour.incBehaviours = new List<IncBehaviour>();
 
             foreach (var inc in IncBehaviour.incBehaviours)
@@ -162,7 +162,7 @@ namespace TQ.TQ_Engine
 
         public static void Init()
         {
-            Camera cam = new Camera(1000, -Vector.forward * 15 + Vector.up * 2, Vector.forward, Vector.up);
+            Camera cam = new Camera(1000, -Vector.forward * 15 + Vector.up * 2, Vector.zero);
             currentBuffer = new GameCache(cam);
             modelsContent = new List<ModelContainer>();
 

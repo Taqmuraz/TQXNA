@@ -242,22 +242,12 @@ public class Matrix4x4
 	}
 
 	public void SetBasis (Vector euler) {
-		Matrix2x2 main = new Matrix2x2 ();
-		main.angle = euler.y;
-		float zUp = Mathf.Sin (euler.x * Mathf.Deg2Rad);
-		float zCos = Mathf.Cos (euler.x * Mathf.Deg2Rad);
-		Vector u = (Vector.up * main).normalized * zCos;
-		Vector zAxis = new Vector (-u.x, -zUp, u.y).normalized;
-		float xUp = Mathf.Sin (euler.z * Mathf.Deg2Rad);
-		float xCos = Mathf.Cos (euler.z * Mathf.Deg2Rad);
-		main.angle = euler.y + 90;
-		u = (Vector.up * main).normalized * xCos;
-		Vector xAxis = new Vector (-u.x, xUp, u.y).normalized;
-		Vector yAxis = -Cross (xAxis, zAxis).normalized;
-		xAxis = -Cross (zAxis, yAxis);
-		forward = zAxis;
-		up = yAxis;
-		right = xAxis;
+
+        Matrix rot = Matrix.CreateFromYawPitchRoll(euler.y * Mathf.Deg2Rad, euler.x * Mathf.Deg2Rad, euler.z * Mathf.Deg2Rad);
+
+		forward = -rot.Forward;
+		up = rot.Up;
+		right = rot.Right;
 
         if (parent != null)
         {
