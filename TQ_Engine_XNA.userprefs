@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="TQ_Engine_XNA\TQ_Engine_XNA.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TQ_Engine_XNA\Program.cs">
+    <Files>
+      <File FileName="TQ_Engine_XNA\Program.cs" Line="5" Column="8" />
+      <File FileName="TQ_Engine_XNA\TQ_EngineRuntime.cs" Line="78" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

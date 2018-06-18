@@ -1,0 +1,9 @@
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\bin\x86\Debug\TQ_Engine_XNA.exe
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\bin\x86\Debug\TQ_Engine_XNA.pdb
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\obj\x86\Debug\TQ_Engine_XNA.exe
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\obj\x86\Debug\TQ_Engine_XNA.pdb
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\bin\x86\Debug\Content\Sprites\UI\Bone.xnb
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\bin\x86\Debug\Content\Models\Cap.xnb
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\bin\x86\Debug\Content\Models\Nin.xnb

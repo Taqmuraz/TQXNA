@@ -1,0 +1,7 @@
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\bin\x86\Release\Content\Models\Characters\Human.xnb
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\bin\x86\Release\TQ_Engine_XNA.exe
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\bin\x86\Release\TQ_Engine_XNA.pdb
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\obj\x86\Release\ResolveAssemblyReference.cache
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\obj\x86\Release\TQ_Engine_XNA.exe
+C:\UnityProjects\TQ_Engine_XNA\TQ_Engine_XNA\TQ_Engine_XNA\obj\x86\Release\TQ_Engine_XNA.pdb
