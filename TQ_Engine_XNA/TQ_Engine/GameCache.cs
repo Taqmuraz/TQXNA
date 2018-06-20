@@ -103,6 +103,7 @@ namespace TQ.TQ_Engine
             get
             {
                 return new string[] {
+                    "Sprites/UI/Bone"
                 };
             }
         }
@@ -111,7 +112,6 @@ namespace TQ.TQ_Engine
         {
 
             Renderer r = new Renderer(new Matrix4x4(Vector.up * 2, new Vector(0, 0, 0), Vector.one * 0.01f), modelsAsset[1]);
-            Renderer c = new Renderer(new Matrix4x4(Vector.up * 2 + Vector.forward * 2, new Vector(0, 0, 0), Vector.one * 1f), modelsAsset[0]);
             
             IncBehaviour.incBehaviours = new List<IncBehaviour>();
 
@@ -155,7 +155,7 @@ namespace TQ.TQ_Engine
                 }
                 //pos += Vector.forward * 0.1f;
 
-                Program.currentEngine.Window.Title = r.matrix.localEulerAngles.ToString();
+                //Program.currentEngine.Window.Title = r.matrix.localEulerAngles.ToString();
 
                 });
         }
@@ -165,14 +165,14 @@ namespace TQ.TQ_Engine
             Camera cam = new Camera(1000, -Vector.forward * 15 + Vector.up * 2, Vector.zero);
             currentBuffer = new GameCache(cam);
             modelsContent = new List<ModelContainer>();
-
+            spritesContent = new List<SpriteContainer>();
             try
             {
                 PostInit();
             }
             catch (Exception ex)
             {
-                Program.currentEngine.Window.Title = ex.StackTrace;
+                Debugger.Log(ex.StackTrace);
             }
         }
     }

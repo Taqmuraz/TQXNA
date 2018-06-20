@@ -79,7 +79,7 @@ namespace TQ
             }
             catch (Exception ex)
             {
-                Window.Title = ex.StackTrace;
+                Window.Title = ex.Message + " " + ex.StackTrace;
             }
         }
 
@@ -166,6 +166,17 @@ namespace TQ
             }
         }
 
+        private void SpriteDrawUpdate()
+        {
+            spriteBatch.Begin();
+
+
+            // для отрисовки спрайтов (на будущее)
+
+
+            spriteBatch.End();
+        }
+
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
@@ -173,6 +184,8 @@ namespace TQ
             CameraControl();
 
             // TODO: Add your drawing code here
+
+            SpriteDrawUpdate();
 
             GameCache.currentBuffer.arrows.Update();
 
